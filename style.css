@@ -8,7 +8,6 @@
 
 .navbar-scrolled {
     background-color: rgba(246, 252, 255, 0.7);
-    ;
     box-shadow: 0 3px 10px rgba(246, 252, 255, 0.7);
 }
 
@@ -127,4 +126,11 @@ a:hover {
 .link{
     color: rgb(255, 50, 50);
     font-size: 3rem;
+}
+
+.zoom{
+    transition: transform 0.5s;
+}
+.zoom:hover{
+    transform: scale(1.1);
 }
