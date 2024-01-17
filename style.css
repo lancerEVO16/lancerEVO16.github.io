@@ -30,7 +30,7 @@ footer {
     margin-top: 2vw;
     margin-bottom: 2vw;
     background-color: rgba(212, 45, 162, 0.7);
-    box-shadow: 0 0 10px 10px rgba(212, 45, 162, 0.7);
+    box-shadow: 0 5px 5px 5px rgba(212, 45, 162, 0.7);
 }
 
 .text-box {
@@ -50,13 +50,13 @@ footer {
 
 .first-row {
     background-color: rgba(172, 79, 189, 0.7);
-    box-shadow: 0 0 10px 10px rgba(172, 79, 189, 0.7);
+    box-shadow: 0 5px 5px 5px rgba(172, 79, 189, 0.7);
     padding: 1vw;
 }
 
 .second-row {
     background-color: rgba(59, 43, 132, 0.7);
-    box-shadow: 0 0 10px 10px rgba(59, 43, 132, 0.7);
+    box-shadow: 0 -5px 5px 5px rgba(59, 43, 132, 0.7);
     padding: 1vw;
 }
 
@@ -127,4 +127,31 @@ a:hover {
 .reveal-down.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+.title-introduction {
+    background-color: rgba(153, 134, 238, 0.7);
+    padding: 0.5vw;
+    animation: fadeInUp ease-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+    max-width: 65vw;
+}
+
+.title-introduction.us {
+    animation: none;
+    max-width: 90vw;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 8vw, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
 }
